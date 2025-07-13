@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F5F5F5; /* Light grayish background for a soft base */
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero {
+    background: linear-gradient(rgba(255, 209, 220, 0.7), rgba(173, 216, 230, 0.7)), url('https://source.unsplash.com/random/1600x900?tech') no-repeat center center/cover;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2em;
+    color: #FFD1DC; /* Pastel pink for logo */
+    text-decoration: none;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ADD8E6; /* Baby blue border */
+    margin: 1rem auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #FFD1DC; /* Pastel pink for heading */
+    margin-bottom: 0.5rem;
+}
+
+.hero h1 .highlight {
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #C1E1C1; /* Mint green for subtitle */
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    margin: 1rem 0;
+}
+
+.btn {
+    background-color: #FFF9A3; /* Light yellow for buttons */
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.btn.secondary {
+    background-color: #ADD8E6; /* Baby blue for secondary button */
+    color: #333;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.Resume-btn {
+    background-color: #FFF9A3; /* Light yellow for resume button */
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+nav {
+    background: #ADD8E6; /* Baby blue for navbar */
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #FFD1DC; /* Pastel pink on hover */
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: #FFFFFF; /* White background for sections */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #C1E1C1; /* Mint green for headings */
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #ADD8E6; /* Baby blue for skill tags */
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #F5F5F5; /* Light grayish background for project cards */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    color: #C1E1C1; /* Mint green for project titles */
+    margin-bottom: 0.5rem;
+}
+
+.project-card a {
+    color: #FFD1DC; /* Pastel pink for links */
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ADD8E6; /* Baby blue for footer */
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
